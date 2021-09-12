@@ -1,0 +1,64 @@
+body {
+  background: linear-gradient(
+    102.7deg,
+    rgb(253, 218, 255) 8.2%,
+    rgb(223, 173, 252) 19.6%,
+    rgb(173, 205, 252) 36.8%,
+    rgb(173, 252, 244) 73.2%,
+    rgb(202, 248, 208) 90.9%
+  );
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 32%;
+  padding: 30px;
+  margin-left: -10px;
+}
+
+.indigo {
+  color: indigo;
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  max-width: 750px;
+  margin: 30px auto;
+}
+
+header p {
+  line-height: 1.8;
+}
+
+header .border {
+  border: 2px solid #666;
+  border-radius: 5px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 197, 61) 0%,
+    rgb(255, 94, 7) 90%
+  );
+  padding: 50px;
+}
+
+@media (max-width: 768px) {
+  .images {
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
